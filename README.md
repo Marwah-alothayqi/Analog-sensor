@@ -7,8 +7,24 @@ project components
 3.Resistor
 4.breadboard‬‬ Board
 and Hook Up Wires to connect components as in the picture
+In the project, the sensor is connected in analog  port  AO , the analog values are displayed on the Serial monitor.
 
 ![Screenshot (1079)](https://user-images.githubusercontent.com/108452991/181673667-fb08863a-b658-48ae-a023-ae4c894df510.png)
+using the following code 
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(A0, INPUT);
+}
+
+void loop()
+{
+  Serial.println(analogRead(A0));
+  
+}
+
+try it !
+https://www.tinkercad.com/things/dePOEVWBnd6
 
 
 
